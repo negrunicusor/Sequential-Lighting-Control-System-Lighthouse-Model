@@ -1,0 +1,27 @@
+Coordonator: Prof. Dr. Ing. Norocel Dragos Codreanu  Revised: Saturday, January 18, 2025
+Studenti: Negru Nicusor Gabriel, Pavel Bianca Miruna          Revision: 422D
+
+
+
+
+
+
+
+Bill Of Materials        January 18,2025      13:17:28	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	1	BT1	9V
+2	1	C1	100nF
+3	1	C2	1uF
+4	1	DS1	6V 60mA
+5	4	D1,D2,D3,D4	DIODE
+6	1	Q1	BC108
+7	1	R1	100k
+8	1	R2	22k
+9	1	R3	2k2
+10	1	R4	1M
+11	1	SW1	SW KEY-SPST
+12	1	U1	4017
+13	1	U2	NE555

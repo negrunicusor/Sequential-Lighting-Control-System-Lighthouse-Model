@@ -1,0 +1,106 @@
+Wire List
+
+Coordonator: Prof. Dr. Ing. Norocel Dragos CodRevised: Saturday, January 18, 2025
+Studenti: Negru Nicusor Gabriel, Pavel Bianca Revision: 422D
+
+
+
+
+
+
+<<< Component List >>>
+9V                            BT1       JUMPER2
+100nF                         C1        CAPCK05
+1uF                           C2        CAP196
+DIODE                         D1        DO35
+DIODE                         D2        DO35
+DIODE                         D3        DO35
+DIODE                         D4        DO35
+6V 60mA                       DS1       CAP196
+BC108                         Q1        TO18
+100k                          R1        RES400
+22k                           R2        RES400
+2k2                           R3        RES400
+1M                            R4        VRES20
+SW KEY-SPST                   SW1       JUMPER2
+4017                          U1        DIP16_3
+NE555                         U2        DIP8_3
+
+<<< Wire List >>>
+
+  NODE  REFERENCE    PIN #   PIN NAME           PIN TYPE       PART VALUE
+
+[00001] 9V
+        R1              1       1               Passive        100k
+        SW1             1       1               Passive        SW KEY-SPST
+        DS1             1       1               Passive        6V 60mA
+        U2              4       RST             Input          NE555
+        U2              8       VCC             Power          NE555
+        U1              16      VCC             Power          4017
+        C1              1       1               Passive        100nF
+
+[00002] GND
+        R2              2       2               Passive        22k
+        C2              2       2               Passive        1uF
+        U2              1       GND             Power          NE555
+        BT1             2       -               Passive        9V
+        U1              13      E\N\A\          Input          4017
+        U1              8       GND             Power          4017
+        Q1              1       EMITTER         Passive        BC108
+        C1              2       2               Passive        100nF
+
+[00003] N04224
+        U2              3       OUT             Output         NE555
+        U1              14      CLK             Input          4017
+
+[00004] N04316
+        R1              2       2               Passive        100k
+        R4              3       B               Passive        1M
+        R4              2       WIPER           Passive        1M
+        U2              7       DSCHG           Passive        NE555
+
+[00005] N04372
+        R2              1       1               Passive        22k
+        U1              15      RST             Input          4017
+
+[00006] N04376
+        SW1             2       2               Passive        SW KEY-SPST
+        BT1             1       +               Passive        9V
+
+[00007] N04392
+        DS1             2       2               Passive        6V 60mA
+        Q1              3       COLLECTOR       Passive        BC108
+
+[00008] N04422
+        R4              1       A               Passive        1M
+        C2              1       1               Passive        1uF
+        U2              2       TRG             Input          NE555
+        U2              6       THR             Input          NE555
+
+[00009] N04430
+        U1              3       Q0              Output         4017
+        D1              1       A               Passive        DIODE
+
+[00010] N04434
+        U1              2       Q1              Output         4017
+        D2              1       A               Passive        DIODE
+
+[00011] N04438
+        D3              1       A               Passive        DIODE
+        U1              7       Q3              Output         4017
+
+[00012] N04442
+        U1              10      Q4              Output         4017
+        D4              1       A               Passive        DIODE
+
+[00013] N04610
+        D3              2       K               Passive        DIODE
+        R3              1       1               Passive        2k2
+        D1              2       K               Passive        DIODE
+        D2              2       K               Passive        DIODE
+        D4              2       K               Passive        DIODE
+
+[00014] N04696
+        R3              2       2               Passive        2k2
+        Q1              2       BASE            Input          BC108
+
